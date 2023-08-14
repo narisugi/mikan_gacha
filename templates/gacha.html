@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+
+<main>
+  <h2 class="page-head">柑橘オールスターズ</h2>
+  <div class="list-container">
+    <div class="card-wrap">
+      <div class="card">
+        <p class="mikan-name">{{mikan_data["name"]}}</p>
+        <p>{{mikan_data["birthday"]}}</p>
+        <p>{{mikan_data["taste"]}}</p>
+        <p>{{mikan_data["url"]}}</p>
+        <p>{{mikan_data["rarity"]}}</p>
+        <p>{{mikan_data["means"]}}</p>
+        <p>{{mikan_data["eat"]}}</p>
+        <p>{{mikan_data["photo"]}}</p>
+      </div>
+    </div>
+  </div>
+  <a href="/gacha" class="btn btn-primary">もう一度ガチャを回す</a>
+</main>
+
+{% endblock %}
